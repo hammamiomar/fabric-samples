@@ -520,3 +520,70 @@
 [34m2020-03-19 04:38:23.295 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 075[0m Writing block [14] (Raft index: 21) to ledger channel=mychannel node=6
 [34m2020-03-19 04:38:38.688 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 07a[0m Writing block [15] (Raft index: 22) to ledger channel=mychannel node=6
 [34m2020-03-19 04:38:57.322 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 080[0m Writing block [16] (Raft index: 23) to ledger channel=mychannel node=6
+[34m2021-07-09 16:47:49.114 UTC [orderer.consensus.etcdraft] HandleChain -> INFO 012[0m EvictionSuspicion not set, defaulting to 10m0s
+[34m2021-07-09 16:47:49.115 UTC [orderer.consensus.etcdraft] HandleChain -> INFO 013[0m With system channel: after eviction InactiveChainRegistry.TrackChain will be called
+[34m2021-07-09 16:48:08.822 UTC [orderer.consensus.etcdraft] HandleChain -> INFO 02e[0m EvictionSuspicion not set, defaulting to 10m0s
+[34m2021-07-09 16:48:08.822 UTC [orderer.consensus.etcdraft] HandleChain -> INFO 02f[0m With system channel: after eviction InactiveChainRegistry.TrackChain will be called
+[34m2021-07-09 16:48:08.822 UTC [orderer.consensus.etcdraft] createOrReadWAL -> INFO 030[0m No WAL data found, creating new WAL at path '/var/hyperledger/production/orderer/etcdraft/wal/mychannel' channel=mychannel node=1
+[34m2021-07-09 16:48:08.831 UTC [orderer.consensus.etcdraft] Start -> INFO 031[0m Starting Raft node channel=mychannel node=1
+[34m2021-07-09 16:48:08.832 UTC [orderer.consensus.etcdraft] start -> INFO 037[0m Starting raft node as part of a new channel channel=mychannel node=1
+[34m2021-07-09 16:48:08.832 UTC [orderer.consensus.etcdraft] becomeFollower -> INFO 038[0m 1 became follower at term 0 channel=mychannel node=1
+[34m2021-07-09 16:48:08.832 UTC [orderer.consensus.etcdraft] newRaft -> INFO 039[0m newRaft 1 [peers: [], term: 0, commit: 0, applied: 0, lastindex: 0, lastterm: 0] channel=mychannel node=1
+[34m2021-07-09 16:48:08.832 UTC [orderer.consensus.etcdraft] becomeFollower -> INFO 03a[0m 1 became follower at term 1 channel=mychannel node=1
+[34m2021-07-09 16:48:08.833 UTC [orderer.consensus.etcdraft] run -> INFO 03c[0m This node is picked to start campaign channel=mychannel node=1
+[34m2021-07-09 16:48:08.835 UTC [orderer.consensus.etcdraft] apply -> INFO 03d[0m Applied config change to add node 1, current nodes in channel: [1 2] channel=mychannel node=1
+[34m2021-07-09 16:48:08.835 UTC [orderer.consensus.etcdraft] apply -> INFO 03e[0m Applied config change to add node 2, current nodes in channel: [1 2] channel=mychannel node=1
+[34m2021-07-09 16:48:09.834 UTC [orderer.consensus.etcdraft] Step -> INFO 047[0m 1 is starting a new election at term 1 channel=mychannel node=1
+[34m2021-07-09 16:48:09.834 UTC [orderer.consensus.etcdraft] becomePreCandidate -> INFO 048[0m 1 became pre-candidate at term 1 channel=mychannel node=1
+[34m2021-07-09 16:48:09.834 UTC [orderer.consensus.etcdraft] poll -> INFO 049[0m 1 received MsgPreVoteResp from 1 at term 1 channel=mychannel node=1
+[34m2021-07-09 16:48:09.834 UTC [orderer.consensus.etcdraft] campaign -> INFO 04a[0m 1 [logterm: 1, index: 2] sent MsgPreVote request to 2 at term 1 channel=mychannel node=1
+[34m2021-07-09 16:48:09.836 UTC [orderer.consensus.etcdraft] poll -> INFO 04b[0m 1 received MsgPreVoteResp from 2 at term 1 channel=mychannel node=1
+[34m2021-07-09 16:48:09.837 UTC [orderer.consensus.etcdraft] stepCandidate -> INFO 04c[0m 1 [quorum:2] has received 2 MsgPreVoteResp votes and 0 vote rejections channel=mychannel node=1
+[34m2021-07-09 16:48:09.837 UTC [orderer.consensus.etcdraft] becomeCandidate -> INFO 04d[0m 1 became candidate at term 2 channel=mychannel node=1
+[34m2021-07-09 16:48:09.837 UTC [orderer.consensus.etcdraft] poll -> INFO 04e[0m 1 received MsgVoteResp from 1 at term 2 channel=mychannel node=1
+[34m2021-07-09 16:48:09.837 UTC [orderer.consensus.etcdraft] campaign -> INFO 04f[0m 1 [logterm: 1, index: 2] sent MsgVote request to 2 at term 2 channel=mychannel node=1
+[34m2021-07-09 16:48:09.840 UTC [orderer.consensus.etcdraft] poll -> INFO 050[0m 1 received MsgVoteResp from 2 at term 2 channel=mychannel node=1
+[34m2021-07-09 16:48:09.840 UTC [orderer.consensus.etcdraft] stepCandidate -> INFO 051[0m 1 [quorum:2] has received 2 MsgVoteResp votes and 0 vote rejections channel=mychannel node=1
+[34m2021-07-09 16:48:09.840 UTC [orderer.consensus.etcdraft] becomeLeader -> INFO 052[0m 1 became leader at term 2 channel=mychannel node=1
+[34m2021-07-09 16:48:09.840 UTC [orderer.consensus.etcdraft] run -> INFO 053[0m raft.node: 1 elected leader 1 at term 2 channel=mychannel node=1
+[34m2021-07-09 16:48:09.840 UTC [orderer.consensus.etcdraft] run -> INFO 054[0m Leader 1 is present, quit campaign channel=mychannel node=1
+[34m2021-07-09 16:48:09.841 UTC [orderer.consensus.etcdraft] run -> INFO 055[0m Raft leader changed: 0 -> 1 channel=mychannel node=1
+[34m2021-07-09 16:48:09.843 UTC [orderer.consensus.etcdraft] run -> INFO 056[0m Start accepting requests as Raft leader at block [0] channel=mychannel node=1
+[34m2021-07-09 16:48:23.173 UTC [orderer.consensus.etcdraft] propose -> INFO 059[0m Created block [1], there are 0 blocks in flight channel=mychannel node=1
+[34m2021-07-09 16:48:23.173 UTC [orderer.consensus.etcdraft] run -> INFO 05a[0m Received config transaction, pause accepting transaction till it is committed channel=mychannel node=1
+[34m2021-07-09 16:48:23.178 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 05b[0m Writing block [1] (Raft index: 4) to ledger channel=mychannel node=1
+[34m2021-07-09 16:48:26.257 UTC [orderer.consensus.etcdraft] propose -> INFO 05e[0m Created block [2], there are 0 blocks in flight channel=mychannel node=1
+[34m2021-07-09 16:48:26.257 UTC [orderer.consensus.etcdraft] run -> INFO 05f[0m Received config transaction, pause accepting transaction till it is committed channel=mychannel node=1
+[34m2021-07-09 16:48:26.263 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 061[0m Writing block [2] (Raft index: 5) to ledger channel=mychannel node=1
+[34m2021-07-09 16:49:11.188 UTC [orderer.consensus.etcdraft] propose -> INFO 063[0m Created block [3], there are 0 blocks in flight channel=mychannel node=1
+[34m2021-07-09 16:49:11.192 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 064[0m Writing block [3] (Raft index: 6) to ledger channel=mychannel node=1
+[34m2021-07-09 16:49:50.498 UTC [orderer.consensus.etcdraft] propose -> INFO 067[0m Created block [4], there are 0 blocks in flight channel=mychannel node=1
+[34m2021-07-09 16:49:50.503 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 068[0m Writing block [4] (Raft index: 7) to ledger channel=mychannel node=1
+[34m2021-07-09 16:49:53.196 UTC [orderer.consensus.etcdraft] propose -> INFO 06b[0m Created block [5], there are 0 blocks in flight channel=mychannel node=1
+[34m2021-07-09 16:49:53.201 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 06c[0m Writing block [5] (Raft index: 8) to ledger channel=mychannel node=1
+[34m2021-07-09 16:49:59.005 UTC [orderer.consensus.etcdraft] propose -> INFO 06f[0m Created block [6], there are 0 blocks in flight channel=mychannel node=1
+[34m2021-07-09 16:49:59.010 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 070[0m Writing block [6] (Raft index: 9) to ledger channel=mychannel node=1
+[34m2021-07-09 16:47:49.885 UTC [orderer.consensus.etcdraft] HandleChain -> INFO 012[0m EvictionSuspicion not set, defaulting to 10m0s
+[34m2021-07-09 16:47:49.885 UTC [orderer.consensus.etcdraft] HandleChain -> INFO 013[0m With system channel: after eviction InactiveChainRegistry.TrackChain will be called
+[34m2021-07-09 16:48:08.822 UTC [orderer.consensus.etcdraft] HandleChain -> INFO 039[0m EvictionSuspicion not set, defaulting to 10m0s
+[34m2021-07-09 16:48:08.824 UTC [orderer.consensus.etcdraft] HandleChain -> INFO 03a[0m With system channel: after eviction InactiveChainRegistry.TrackChain will be called
+[34m2021-07-09 16:48:08.825 UTC [orderer.consensus.etcdraft] createOrReadWAL -> INFO 03b[0m No WAL data found, creating new WAL at path '/var/hyperledger/production/orderer/etcdraft/wal/mychannel' channel=mychannel node=2
+[34m2021-07-09 16:48:08.829 UTC [orderer.consensus.etcdraft] Start -> INFO 03c[0m Starting Raft node channel=mychannel node=2
+[34m2021-07-09 16:48:08.831 UTC [orderer.consensus.etcdraft] start -> INFO 042[0m Starting raft node as part of a new channel channel=mychannel node=2
+[34m2021-07-09 16:48:08.833 UTC [orderer.consensus.etcdraft] becomeFollower -> INFO 043[0m 2 became follower at term 0 channel=mychannel node=2
+[34m2021-07-09 16:48:08.833 UTC [orderer.consensus.etcdraft] newRaft -> INFO 044[0m newRaft 2 [peers: [], term: 0, commit: 0, applied: 0, lastindex: 0, lastterm: 0] channel=mychannel node=2
+[34m2021-07-09 16:48:08.833 UTC [orderer.consensus.etcdraft] becomeFollower -> INFO 045[0m 2 became follower at term 1 channel=mychannel node=2
+[34m2021-07-09 16:48:08.837 UTC [orderer.consensus.etcdraft] apply -> INFO 047[0m Applied config change to add node 1, current nodes in channel: [1 2] channel=mychannel node=2
+[34m2021-07-09 16:48:08.838 UTC [orderer.consensus.etcdraft] apply -> INFO 048[0m Applied config change to add node 2, current nodes in channel: [1 2] channel=mychannel node=2
+[34m2021-07-09 16:48:09.835 UTC [orderer.consensus.etcdraft] Step -> INFO 049[0m 2 [logterm: 1, index: 2, vote: 0] cast MsgPreVote for 1 [logterm: 1, index: 2] at term 1 channel=mychannel node=2
+[34m2021-07-09 16:48:09.838 UTC [orderer.consensus.etcdraft] Step -> INFO 04a[0m 2 [term: 1] received a MsgVote message with higher term from 1 [term: 2] channel=mychannel node=2
+[34m2021-07-09 16:48:09.838 UTC [orderer.consensus.etcdraft] becomeFollower -> INFO 04b[0m 2 became follower at term 2 channel=mychannel node=2
+[34m2021-07-09 16:48:09.838 UTC [orderer.consensus.etcdraft] Step -> INFO 04c[0m 2 [logterm: 1, index: 2, vote: 0] cast MsgVote for 1 [logterm: 1, index: 2] at term 2 channel=mychannel node=2
+[34m2021-07-09 16:48:09.841 UTC [orderer.consensus.etcdraft] run -> INFO 04d[0m raft.node: 2 elected leader 1 at term 2 channel=mychannel node=2
+[34m2021-07-09 16:48:09.842 UTC [orderer.consensus.etcdraft] run -> INFO 04e[0m Raft leader changed: 0 -> 1 channel=mychannel node=2
+[34m2021-07-09 16:48:23.178 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 04f[0m Writing block [1] (Raft index: 4) to ledger channel=mychannel node=2
+[34m2021-07-09 16:48:26.264 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 050[0m Writing block [2] (Raft index: 5) to ledger channel=mychannel node=2
+[34m2021-07-09 16:49:11.194 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 051[0m Writing block [3] (Raft index: 6) to ledger channel=mychannel node=2
+[34m2021-07-09 16:49:50.504 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 052[0m Writing block [4] (Raft index: 7) to ledger channel=mychannel node=2
+[34m2021-07-09 16:49:53.202 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 053[0m Writing block [5] (Raft index: 8) to ledger channel=mychannel node=2
+[34m2021-07-09 16:49:59.011 UTC [orderer.consensus.etcdraft] writeBlock -> INFO 054[0m Writing block [6] (Raft index: 9) to ledger channel=mychannel node=2

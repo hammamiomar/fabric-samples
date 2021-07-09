@@ -1,0 +1,6 @@
+[2021-07-10 00:06:05.683] [renderer1] [error] spawn git ENOENT: Error: spawn git ENOENT
+	at Process.ChildProcess._handle.onexit (internal/child_process.js:269:19)
+	at onErrorNT (internal/child_process.js:465:16)
+	at processTicksAndRejections (internal/process/task_queues.js:80:21)
+[2021-07-10 00:10:09.225] [renderer1] [error] [text file model] handleSaveError(8) - exit - resulted in a save error: Error: Unable to write file '/src/github.com/hyperledger/fabric-samples/fabcar/javascript/invoke.js' (Error: File Modified Since) file:///src/github.com/hyperledger/fabric-samples/fabcar/javascript/invoke.js
+[2021-07-10 00:10:10.655] [renderer1] [error] ENOENT: no such file or directory, unlink '/src/github.com/hyperledger/fabric-samples/User/workspaceStorage/4d37f1b33856fd69c7bfc147af50d798/state.vscdb': Error: ENOENT: no such file or directory, unlink '/src/github.com/hyperledger/fabric-samples/User/workspaceStorage/4d37f1b33856fd69c7bfc147af50d798/state.vscdb'

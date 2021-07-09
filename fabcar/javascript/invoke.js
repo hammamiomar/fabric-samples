@@ -7,7 +7,7 @@
 const { Gateway, Wallets } = require('fabric-network');
 const fs = require('fs');
 const path = require('path');
-const data1 = require("/Users/kavyaub/Downloads/data1.json");
+//const data1 = require("/Users/kavyaub/Downloads/data1.json");
 var parsedDate = JSON.parse(data1);
 
 async function main() {

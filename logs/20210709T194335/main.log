@@ -1,0 +1,16 @@
+[2021-07-09 19:43:35.154] [main] [info] update#setState idle
+[2021-07-09 19:43:35.167] [main] [info] window: using vscode-file:// protocol and V8 cache options: bypassHeatCheck
+[2021-07-09 19:44:05.160] [main] [info] update#setState checking for updates
+[2021-07-09 19:44:05.164] [main] [info] update#setState idle
+[2021-07-09 20:44:05.261] [main] [info] update#setState checking for updates
+[2021-07-09 20:44:05.263] [main] [info] update#setState idle
+[2021-07-09 21:44:05.356] [main] [info] update#setState checking for updates
+[2021-07-09 21:44:05.359] [main] [info] update#setState idle
+[2021-07-09 22:44:05.457] [main] [info] update#setState checking for updates
+[2021-07-09 22:44:05.461] [main] [info] update#setState idle
+[2021-07-09 23:44:05.557] [main] [info] update#setState checking for updates
+[2021-07-09 23:44:05.560] [main] [info] update#setState idle
+[2021-07-10 00:06:51.958] [main] [error] [storage state.vscdb] prepare(): Error: SQLITE_READONLY_DBMOVED: attempt to write a readonly database (INSERT INTO ItemTable VALUES (?,?),(?,?)). Details: Keys: history.entries, workbench.explorer.treeViewState Length: 159
+[2021-07-10 00:10:10.651] [main] [error] [storage state.vscdb] prepare(): Error: SQLITE_READONLY_DBMOVED: attempt to write a readonly database (INSERT INTO ItemTable VALUES (?,?),(?,?),(?,?),(?,?),(?,?)). Details: Keys: __$__targetStorageMarker, lifecyle.lastShutdownReason, memento/workbench.editors.files.textFileEditor, codelens/cache2, suggest/memories/recentlyUsed Length: 11317
+[2021-07-10 00:10:10.757] [main] [error] [storage state.vscdb] prepare(): Error: SQLITE_READONLY_DBMOVED: attempt to write a readonly database (INSERT INTO ItemTable VALUES (?,?)). Details: Keys: editorFontInfo Length: 972
+[2021-07-10 00:10:10.790] [main] [error] Error: ENOENT: no such file or directory, unlink '/src/github.com/hyperledger/fabric-samples/User/workspaceStorage/4d37f1b33856fd69c7bfc147af50d798/state.vscdb'
