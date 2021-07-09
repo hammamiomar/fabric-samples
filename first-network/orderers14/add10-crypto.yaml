@@ -14,12 +14,12 @@ OrdererOrgs:
     Domain: ord1.example.com
     Specs:
       - Hostname: orderer1
-      - Hostname: orderer2
-      - Hostname: orderer3
-      - Hostname: orderer4
-      - Hostname: orderer5
-      - Hostname: orderer6
-      - Hostname: orderer7
+      # - Hostname: orderer2
+      # - Hostname: orderer3
+      # - Hostname: orderer4
+      # - Hostname: orderer5
+      # - Hostname: orderer6
+      # - Hostname: orderer7
 
   # ---------------------------------------------------------------------------
   # Orderer Org 2
@@ -28,12 +28,12 @@ OrdererOrgs:
     Domain: ord2.example.com
     Specs:
       - Hostname: orderer1
-      - Hostname: orderer2
-      - Hostname: orderer3
-      - Hostname: orderer4
-      - Hostname: orderer5
-      - Hostname: orderer6
-      - Hostname: orderer7
+      # - Hostname: orderer2
+      # - Hostname: orderer3
+      # - Hostname: orderer4
+      # - Hostname: orderer5
+      # - Hostname: orderer6
+      # - Hostname: orderer7
 
 
 # ---------------------------------------------------------------------------
@@ -47,7 +47,7 @@ PeerOrgs:
     Domain: org1.example.com
     EnableNodeOUs: true
     Template:
-      Count: 3
+      Count: 4
     Users:
       Count: 1
   # ---------------------------------------------------------------------------
@@ -57,6 +57,6 @@ PeerOrgs:
     Domain: org2.example.com
     EnableNodeOUs: true
     Template:
-      Count: 3
+      Count: 4
     Users:
       Count: 1

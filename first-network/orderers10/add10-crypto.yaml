@@ -14,10 +14,10 @@ OrdererOrgs:
     Domain: ord1.example.com
     Specs:
       - Hostname: orderer1
-      - Hostname: orderer2
-      - Hostname: orderer3
-      - Hostname: orderer4
-      - Hostname: orderer5
+      # - Hostname: orderer2
+      # - Hostname: orderer3
+      # - Hostname: orderer4
+      # - Hostname: orderer5
 
   # ---------------------------------------------------------------------------
   # Orderer Org 2
@@ -26,10 +26,10 @@ OrdererOrgs:
     Domain: ord2.example.com
     Specs:
       - Hostname: orderer1
-      - Hostname: orderer2
-      - Hostname: orderer3
-      - Hostname: orderer4
-      - Hostname: orderer5
+      # - Hostname: orderer2
+      # - Hostname: orderer3
+      # - Hostname: orderer4
+      # - Hostname: orderer5
 
 
 # ---------------------------------------------------------------------------

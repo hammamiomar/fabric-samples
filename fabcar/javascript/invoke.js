@@ -7,13 +7,14 @@
 const { Gateway, Wallets } = require('fabric-network');
 const fs = require('fs');
 const path = require('path');
-//const data1 = require("/Users/kavyaub/Downloads/data1.json");
-var parsedDate = JSON.parse(data1);
+//const data1 = require("/home/omar/Downloads/CarData.json");
+//var stringified = JSON.stringify(data1)
+//var parsedDate = JSON.parse(stringified);
 
 async function main() {
     try {
         // load the network configuration
-        const ccpPath = path.resolve(__dirname, '..', '..', 'first-network/addPeers5', 'connection-org1.json');
+        const ccpPath = path.resolve(__dirname, '..', '..', 'first-network/orderers16', 'connection-org1.json');
         let ccp = JSON.parse(fs.readFileSync(ccpPath, 'utf8'));
 
         // Create a new file system based wallet for managing identities.
