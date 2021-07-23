@@ -6,3 +6,11 @@
 [2021-07-10 01:35:59.728] [main] [info] update#setState idle
 [2021-07-10 02:35:59.824] [main] [info] update#setState checking for updates
 [2021-07-10 02:35:59.828] [main] [info] update#setState idle
+[2021-07-10 03:34:48.840] [main] [error] [uncaught exception in main]: Error: SharedProcess: crashed (detail: killed, code: 15)
+[2021-07-10 03:34:48.841] [main] [error] Error: SharedProcess: crashed (detail: killed, code: 15)
+    at /snap/code/68/usr/share/code/resources/app/out/vs/code/electron-main/main.js:59:69368
+    at P.fire (/snap/code/68/usr/share/code/resources/app/out/vs/code/electron-main/main.js:16:1726)
+    at /snap/code/68/usr/share/code/resources/app/out/vs/code/electron-main/main.js:14:48058
+    at P.fire (/snap/code/68/usr/share/code/resources/app/out/vs/code/electron-main/main.js:16:1726)
+    at Object.<anonymous> (/snap/code/68/usr/share/code/resources/app/out/vs/code/electron-main/main.js:58:9492)
+    at Object.emit (events.js:327:22)

@@ -6,6 +6,12 @@
                 "folderUri": "file:///src/github.com/hyperledger/fabric-samples"
             },
             {
+                "folderUri": "file:///home/omar/Downloads"
+            },
+            {
+                "fileUri": "file:///home/omar/Downloads/CarData.json"
+            },
+            {
                 "fileUri": "file:///src/github.com/hyperledger/fabric-samples/first-network/addPeers5/docker-compose-add10-orderer.yaml"
             }
         ]
@@ -44,7 +50,8 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor"
+                                    "label": "&&Reopen Closed Editor",
+                                    "enabled": false
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -62,12 +69,35 @@
                                     "label": "/src/github.com/hyperledger/fabric-samples"
                                 },
                                 {
+                                    "id": "openRecentFolder",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///home/omar/Downloads",
+                                        "path": "/home/omar/Downloads",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/home/omar/Downloads"
+                                },
+                                {
                                     "id": "vscode.menubar.separator"
                                 },
                                 {
                                     "id": "openRecentFile",
                                     "uri": {
                                         "$mid": 1,
+                                        "external": "file:///home/omar/Downloads/CarData.json",
+                                        "path": "/home/omar/Downloads/CarData.json",
+                                        "scheme": "file"
+                                    },
+                                    "enabled": true,
+                                    "label": "/home/omar/Downloads/CarData.json"
+                                },
+                                {
+                                    "id": "openRecentFile",
+                                    "uri": {
+                                        "$mid": 1,
+                                        "external": "file:///src/github.com/hyperledger/fabric-samples/first-network/addPeers5/docker-compose-add10-orderer.yaml",
                                         "path": "/src/github.com/hyperledger/fabric-samples/first-network/addPeers5/docker-compose-add10-orderer.yaml",
                                         "scheme": "file"
                                     },
@@ -1509,13 +1539,13 @@
             "backupPath": "/src/github.com/hyperledger/fabric-samples/Backups/5718d07ab76c53aa1ae3d51fedf9d3ce",
             "uiState": {
                 "mode": 0,
-                "x": 447,
-                "y": 154,
+                "x": 314,
+                "y": 68,
                 "width": 1024,
                 "height": 768
             }
         },
         "openedWindows": []
     },
-    "pickerWorkingDir": "/src/github.com/hyperledger"
+    "pickerWorkingDir": "/home/omar/Downloads"
 }

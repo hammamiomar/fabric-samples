@@ -47,15 +47,32 @@ OrdererOrgs:
     Domain: ord3.example.com
     Specs:
       - Hostname: orderer1
-      - Hostname: orderer2
-      - Hostname: orderer3
-      - Hostname: orderer4
-      - Hostname: orderer5
-      - Hostname: orderer6
-      - Hostname: orderer7
-      - Hostname: orderer8
-      - Hostname: orderer9
-      - Hostname: orderer10
+      # - Hostname: orderer2
+      # - Hostname: orderer3
+      # - Hostname: orderer4
+      # - Hostname: orderer5
+      # - Hostname: orderer6
+      # - Hostname: orderer7
+      # - Hostname: orderer8
+      # - Hostname: orderer9
+      # - Hostname: orderer10
+
+# ---------------------------------------------------------------------------
+  # Orderer Org 4
+  # ---------------------------------------------------------------------------
+  - Name: Orderer4
+    Domain: ord4.example.com
+    Specs:
+      - Hostname: orderer1
+      # - Hostname: orderer2
+      # - Hostname: orderer3
+      # - Hostname: orderer4
+      # - Hostname: orderer5
+      # - Hostname: orderer6
+      # - Hostname: orderer7
+      # - Hostname: orderer8
+      # - Hostname: orderer9
+      # - Hostname: orderer10
 
 # ---------------------------------------------------------------------------
 # "PeerOrgs" - Definition of organizations managing peer nodes
@@ -68,7 +85,7 @@ PeerOrgs:
     Domain: org1.example.com
     EnableNodeOUs: true
     Template:
-      Count: 30
+      Count: 2
     Users:
       Count: 1
   # ---------------------------------------------------------------------------
@@ -78,6 +95,27 @@ PeerOrgs:
     Domain: org2.example.com
     EnableNodeOUs: true
     Template:
-      Count: 30
+      Count: 2
     Users:
       Count: 1
+   # ---------------------------------------------------------------------------
+  # Org3: 
+  # ---------------------------------------------------------------------------
+  - Name: Org3
+    Domain: org3.example.com
+    EnableNodeOUs: true
+    Template:
+      Count: 2
+    Users:
+      Count: 1
+  # ---------------------------------------------------------------------------
+  # Org2: 
+  # ---------------------------------------------------------------------------
+  - Name: Org4
+    Domain: org4.example.com
+    EnableNodeOUs: true
+    Template:
+      Count: 2
+    Users:
+      Count: 1
+  

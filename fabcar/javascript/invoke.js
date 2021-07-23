@@ -8,13 +8,13 @@ const { Gateway, Wallets } = require('fabric-network');
 const fs = require('fs');
 const path = require('path');
 //const data1 = require("/home/omar/Downloads/CarData.json");
-//var stringified = JSON.stringify(data1)
-//var parsedDate = JSON.parse(stringified);
+const data1 = '{"time": "900","id": "10_25_600_355","type": "1","link": "-139919720#0_3","lane": "3","x": "1977.46","y": "3790.6","angle": "331.47","speed": "0","pos": "83.91","direction": "NB"}'
+var parsedDate = JSON.parse(data1);
 
 async function main() {
     try {
         // load the network configuration
-        const ccpPath = path.resolve(__dirname, '..', '..', 'first-network/orderers10', 'connection-org1.json');
+        const ccpPath = path.resolve(__dirname, '..', '..', 'first-network/orderers16', 'connection-org1.json');
         let ccp = JSON.parse(fs.readFileSync(ccpPath, 'utf8'));
 
         // Create a new file system based wallet for managing identities.
@@ -47,7 +47,8 @@ async function main() {
         var len = Object.keys(parsedDate).length
         //console.log(parsedDate[1])
         for (let i = 1; i <= len; i=i+2) {
-            await contract.submitTransaction('createCar','CAR'+i, parsedDate[i]['time'],parsedDate[i]['id'],parsedDate[i]['type'],parsedDate[i]['link'],parsedDate[i]['lane'],parsedDate[i]['x'],parsedDate[i]['y'],parsedDate[i]['angle'],parsedDate[i]['speed'],parsedDate[i]['pos'],parsedDate[i]['direction']);
+            //await contract.submitTransaction('createCar','CAR'+i, parsedDate[i]['time'],parsedDate[i]['id'],parsedDate[i]['type'],parsedDate[i]['link'],parsedDate[i]['lane'],parsedDate[i]['x'],parsedDate[i]['y'],parsedDate[i]['angle'],parsedDate[i]['speed'],parsedDate[i]['pos'],parsedDate[i]['direction']);
+            await contract.submitTransaction('createCar','CAR'+i, parsedDate['time'],parsedDate['id'],parsedDate['type'],parsedDate['link'],parsedDate['lane'],parsedDate['x'],parsedDate['y'],parsedDate['angle'],parsedDate['speed'],parsedDate['pos'],parsedDate['direction']);
             console.log('Transaction has been submitted: '+i);
             //console.info('Added <--> ', parsedDate[i]);
         }
